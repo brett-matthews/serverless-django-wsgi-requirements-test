@@ -1,2 +1,4 @@
 /serverless-django-wsgi-requirements-test
 /.idea/workspace.xml
+/djangotest/db.sqlite3
+/djangotest/djangotest/__pycache__
