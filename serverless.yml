@@ -2,7 +2,7 @@ service: serverless-django-wsgi-requirements-test
 
 custom:
   wsgi:
-    app: djangotest.wsgi.application
+    app: project.wsgi.application
   pythonRequirements:
     dockerizePip: true
     dockerFile: Dockerfile
