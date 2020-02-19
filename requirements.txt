@@ -1,3 +1,8 @@
 mysqlclient
-Django==2.1.9
 werkzeug
+
+# working
+Django==2.1.9
+
+# not working
+# Django~=2.2
