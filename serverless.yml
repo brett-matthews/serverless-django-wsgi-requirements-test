@@ -17,3 +17,6 @@ functions:
     events:
       - http: ANY /
       - http: ANY {proxy+}
+provider:
+  name: aws
+  runtime: python3.6
