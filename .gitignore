@@ -1,3 +1,8 @@
+/serverless-django-wsgi-requirements-test
+/djangotest/db.sqlite3
+/djangotest/djangotest/__pycache__
+/djangotest/.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
