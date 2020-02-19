@@ -1,0 +1,14 @@
+service: serverless-django-wsgi-requirements-test
+
+custom:
+  wsgi:
+    app: djangotest.wsgi.application
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
+functions:
+  api:
+    handler: wsgi_handler.handler
+    events:
+      - http: ANY /
+      - http: ANY {proxy+}
