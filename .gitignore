@@ -79,3 +79,4 @@ venv/
 serverless_environment_variables.yml
 .serverless
 /node_modules
+/db.sqlite3
