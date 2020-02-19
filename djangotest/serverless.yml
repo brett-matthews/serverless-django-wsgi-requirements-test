@@ -3,6 +3,11 @@ service: serverless-django-wsgi-requirements-test
 custom:
   wsgi:
     app: djangotest.wsgi.application
+  pythonRequirements:
+    dockerizePip: true
+    dockerFile: Dockerfile
+#    dockerExtraFiles:
+#      - /usr/lib64/mysql57/libmysqlclient.so.1020
 plugins:
   - serverless-wsgi
   - serverless-python-requirements
