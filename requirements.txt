@@ -1,7 +1,7 @@
 mysqlclient
 werkzeug
 
-# working
+# not working
 Django==2.1.9
 
 # not working
