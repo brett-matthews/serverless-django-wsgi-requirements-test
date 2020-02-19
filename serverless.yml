@@ -6,8 +6,8 @@ custom:
   pythonRequirements:
     dockerizePip: true
     dockerFile: Dockerfile
-#    dockerExtraFiles:
-#      - /usr/lib64/mysql57/libmysqlclient.so.1020
+    dockerExtraFiles:
+      - /usr/lib64/mysql57/libmysqlclient.so.1020
 plugins:
   - serverless-wsgi
   - serverless-python-requirements
@@ -21,3 +21,8 @@ provider:
   name: aws
   runtime: python3.6
   region: ap-southeast-2
+  environment:
+    DB_NAME: ${opt:db_name}
+    DB_USER: ${opt:db_user}
+    DB_PASSWORD: ${opt:db_password}
+    DB_HOST: ${opt:db_host}
