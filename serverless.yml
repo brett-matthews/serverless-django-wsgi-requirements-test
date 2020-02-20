@@ -4,11 +4,12 @@ custom:
   wsgi:
     app: project.wsgi.application
   pythonRequirements:
+    useDownloadCache: false
+    useStaticCache: false
     dockerizePip: true
     dockerFile: Dockerfile
     dockerExtraFiles:
-      # - /usr/lib64/mysql/libmysqlclient.so.18
-      - /usr/lib64/mysql57/libmysqlclient.so.1020
+      - /usr/lib64/mysql/libmysqlclient.so.18
 plugins:
   - serverless-wsgi
   - serverless-python-requirements
