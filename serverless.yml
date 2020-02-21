@@ -4,6 +4,7 @@ custom:
   wsgi:
     app: project.wsgi.application
   pythonRequirements:
+    fileName: requirements_serverless.txt
     useDownloadCache: false
     useStaticCache: false
     dockerizePip: true
